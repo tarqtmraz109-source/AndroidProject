@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBackground">#F8F8F8</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorPrimary">#20C4BE</color>
+    <color name="colorCardBg">#FFFFFF</color>
+    <color name="colorBottomNav">#FFFFFF</color>
+    <color name="colorIcon">#212121</color>
+
+    <color name="colorContactBg">#F7FAFC</color>
+    <color name="colorContactCardBg">#EAFBFC</color>
+    <color name="colorTextPrimary">#063A52</color>
+    <color name="colorTextMuted">#8C9AA5</color>
+    <color name="colorAccent2">#18B8B3</color>
+    <color name="colorBtnText">#0B3A53</color>
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorAboutCard">#BDEEEF</color>
+    <color name="colorAboutTextDark">#123B45</color>
+    <color name="colorAboutTextMuted">#777777</color>
+    <color name="colorAboutSecondaryMuted">#666666</color>
+    <color name="colorFooterMuted">#A5B5BE</color>
+    <color name="colorFooterSecondary">#8AA7B0</color>
+    <color name="colorSectionHeader">#063A52</color>
+    <color name="colorOrangeAccent">#FFA000</color>
+    <color name="colorCircleIconBg">#DDF8F8</color>
+    <color name="colorEditTextBg">#FFFFFF</color>
+    <color name="colorEditTextStroke">#CBEDEF</color>
+</resources>
