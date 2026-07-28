@@ -24,7 +24,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-  <ImageView
+            <ImageView
 
                 android:id="@+id/bgImage"
                 android:layout_width="0dp"
@@ -37,6 +37,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cartCard"
                 android:layout_width="90dp"
                 android:layout_height="85dp"
                 android:layout_marginTop="65dp"
@@ -99,6 +100,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/p32"
                 android:layout_width="57dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="15dp"
@@ -123,6 +125,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/saveMoreBadge"
         android:layout_width="80dp"
         android:layout_height="28dp"
         android:layout_marginLeft="-15dp"
@@ -172,6 +175,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
+        android:id="@+id/description"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="تسوق بذكاء، قارن أسعار منتجاتك المفضلة عبر\n أكثر المتاجر في قطاع غزة وابحث عن أفضل\n الأسعار في ثوانٍ."
