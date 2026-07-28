@@ -10,6 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ShopDetails extends AppCompatActivity {
 
@@ -48,7 +53,29 @@ public class ShopDetails extends AppCompatActivity {
 
         findViewById(R.id.backBtn).setOnClickListener(v -> finish());
 
+        setupFeaturedProducts(imageRes);
         setupBottomNav();
+    }
+
+    private void setupFeaturedProducts(int imageRes) {
+        RecyclerView recyclerView = findViewById(R.id.recyclerProducts);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        List<Object> items = new ArrayList<>();
+        items.add(new Product("منتج مميز 1", "المتجر", "XX.XX ₪", imageRes));
+        items.add(new Product("منتج مميز 2", "المتجر", "XX.XX ₪", imageRes));
+        items.add(new Product("منتج مميز 3", "المتجر", "XX.XX ₪", imageRes));
+
+        ProductAdapter adapter = new ProductAdapter(items, product -> {
+            Intent intent = new Intent(ShopDetails.this, PrudectDetails.class);
+            intent.putExtra("product_name", product.getName());
+            intent.putExtra("product_shop", product.getShop());
+            intent.putExtra("product_price", product.getPrice());
+            intent.putExtra("product_image", product.getImageRes());
+            startActivity(intent);
+        });
+
+        recyclerView.setAdapter(adapter);
     }
 
     private void setupBottomNav() {
