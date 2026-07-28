@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/imgProduct"

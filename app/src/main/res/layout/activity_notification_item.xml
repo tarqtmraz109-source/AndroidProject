@@ -5,14 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3FDFB"
     tools:context=".NotificationItem">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         tools:layout_editor_absoluteX="29dp">
 
         <ImageButton
