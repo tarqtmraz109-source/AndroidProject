@@ -62,13 +62,13 @@ public class StartScreen extends AppCompatActivity {
         View subTitle = findViewById(R.id.subTitle);
         View description = findViewById(R.id.description);
 
-        // 2. تشغيل حركة طفو السلة بشكل هادئ ومستمر
+
         startFloatingAnimation(cartCard, -12f, 1500);
 
-        // 3. تجهيز العناصر بالإخفاء الأولي
+
         hideViews(p32, p34, p29, saveMoreBadge, title, subTitle, description, btnStart);
 
-        // 4. تنفيذ تسلسل حركة الظهور (يمين -> وسط -> يسار + وفر أكثر -> النصوص بالتتابع)
+
         showWithPop(p32, () -> {
             showWithPop(p34, () -> {
                 showWithPop(saveMoreBadge, null);

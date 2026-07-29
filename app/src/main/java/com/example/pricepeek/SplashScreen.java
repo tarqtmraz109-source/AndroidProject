@@ -45,7 +45,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
-        // --- بداية كود انيميشن الدوائر ---
+
         View circleTopRight = findViewById(R.id.circleTopRight);
         View circleMidLeft = findViewById(R.id.circleMidLeft);
         View circleBottomLeft = findViewById(R.id.circleBottomLeft);
