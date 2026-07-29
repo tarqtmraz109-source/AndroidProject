@@ -42,6 +42,8 @@ public class Shop extends AppCompatActivity {
         shops.add(new ShopModel("الواحة", "شارع الصناعة، غزة", "059-789-0123", "⭐ 4.1", "9:00 - 19:00", R.drawable.ic_alwaha_furn));
         shops.add(new ShopModel("القدس", "شارع عمر المختار، غزة", "059-890-1234", "⭐ 4.4", "10:00 - 20:00", R.drawable.ic_alquds_furn));
         shops.add(new ShopModel("أثاث روتو", "شارع الرشيد، غزة", "059-901-2345", "⭐ 4.3", "9:00 - 21:00", R.drawable.ic_ruto_furn));
+        shops.add(new ShopModel("سوبر ماركت غزة ", "شارع العشرين، النصيرات", "059-321-8875", "⭐ 4.3", "9:00 - 21:00", R.drawable.ic_alsham_market));
+
 
         RecyclerView recyclerView = findViewById(R.id.Shops);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

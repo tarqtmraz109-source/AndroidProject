@@ -110,6 +110,11 @@ public class ShopDetails extends AppCompatActivity {
                     items.add(new Product("نابض سقفي", shopName, "120.00 ₪", R.drawable.furniture_lamp2));
                     items.add(new Product("طاولة مكتب خشبية", shopName, "220.00 ₪", R.drawable.furniture_table3));
                     break;
+                case "سوبر ماركت غزة ":
+                    items.add(new Product("زبادي كامل الدسم", shopName, "3.75 ₪", R.drawable.dairy_yogurt1));
+                    items.add(new Product("جبنة بيضاء", shopName, "14.00 ₪", R.drawable.dairy_cheese));
+                    items.add(new Product("حليب طازج", shopName, "5.50 ₪", R.drawable.dairy_milk));
+                    break;
             }
         }
 
