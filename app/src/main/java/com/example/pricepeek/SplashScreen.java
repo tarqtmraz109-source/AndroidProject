@@ -36,7 +36,7 @@ public class SplashScreen extends AppCompatActivity {
             startActivity(intent);
             finish();
 
-        }, 10000);
+        }, 3000);
 
 
         View logoImage = findViewById(R.id.AppImg);
