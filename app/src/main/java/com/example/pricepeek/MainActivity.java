@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupCategories() {
         List<Category> categories = new ArrayList<>();
-        categories.add(new Category("لحوم وأسماك", android.R.drawable.ic_menu_myplaces, Meat.class));
-        categories.add(new Category("ألبان", android.R.drawable.ic_menu_agenda, Dairy.class));
-        categories.add(new Category("مشروبات", android.R.drawable.ic_menu_compass, Drinck.class));
-        categories.add(new Category("خضروات", android.R.drawable.ic_menu_gallery, Grocery.class));
-        categories.add(new Category("مواد تنظيف", android.R.drawable.ic_menu_manage, CleaningMaterial.class));
-        categories.add(new Category("أثاث", android.R.drawable.ic_menu_sort_by_size, Furniture.class));
-        categories.add(new Category("مواد غذائية", android.R.drawable.ic_menu_search, FoodStuffs.class));
+        categories.add(new Category("لحوم وأسماك", R.drawable.meat_sec_ic, Meat.class));
+        categories.add(new Category("ألبان", R.drawable.dairy_sec_ic, Dairy.class));
+        categories.add(new Category("مشروبات", R.drawable.drink_sec_ic, Drinck.class));
+        categories.add(new Category("خضروات", R.drawable.vegetable_sec_ic, Grocery.class));
+        categories.add(new Category("مواد تنظيف", R.drawable.cleaning_sec_ic, CleaningMaterial.class));
+        categories.add(new Category("أثاث", R.drawable.furniture_sec_ic, Furniture.class));
+        categories.add(new Category("مواد غذائية", R.drawable.grocery_sec_ic, FoodStuffs.class));
 
         RecyclerView sectionRecyclerView = findViewById(R.id.SectionRecyclerView);
         sectionRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
